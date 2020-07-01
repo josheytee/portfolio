@@ -1,6 +1,5 @@
 import React from 'react';
 import Portfolio from '../containers/Portfolio';
-import Slideshow from '../containers/SlideShow';
 
 function Index() {
   document.title = "@josheytee | Home";

@@ -8,7 +8,7 @@
           comment: "helloe world"
       },
       // url: "eee",
-      repo: 'http://github.com/josheytee/vhclinc',
+      repo: 'http://github.com/josheytee/virtualhealth',
       technology: "PHP (Laravel), HTML, CSS and vue.js",
       problem: `
       <p>An app that connects doctor to patients</p>
