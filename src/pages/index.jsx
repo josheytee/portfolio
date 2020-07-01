@@ -63,10 +63,10 @@ function Index() {
 
       <div className="container">
 
-        <section>
+        {/* <section>
           <h2>Testimonials</h2>
           <Slideshow />
-        </section>
+        </section> */}
 
         <section className="about">
           <div className=" d-flex">
