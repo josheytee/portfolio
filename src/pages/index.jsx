@@ -25,7 +25,7 @@ function Index() {
       
       <section className="services">
         <div className="container">
-          <a name="services"><h2>Services</h2></a>
+          <a name="services" href=" "><h2>Services</h2></a>
           <div className="services-wrapper">
             <section className="service">
               <div className="img-circle">
@@ -43,7 +43,7 @@ function Index() {
             </section>
             <section className="service">
               <div className="img-circle">
-                <img src="./icons/api.svg"/>
+                <img src="./icons/api.svg" alt="api development"/>
               </div>
               <h3>API</h3>
             </section>
@@ -70,7 +70,7 @@ function Index() {
         <section className="about">
           <div className=" d-flex">
             <section className="picture">
-              <a name="about"> <img src="me.jpg"/></a>
+              <a name="about" href=" "> <img src="me.jpg" alt="olwatobiloba agbeja"/></a>
             </section>
 
             <section>
@@ -91,7 +91,7 @@ He is also a computer science and engineering graduate of Ladoke Akintola Univer
         </section>
         
         <section className="contact">
-          <a name="contact"><h2>Contact</h2></a>
+          <a name="contact" href=" "><h2>Contact</h2></a>
           <div className="d-flex">
             <section>
               <span className="watermark">Get in Touch</span>
