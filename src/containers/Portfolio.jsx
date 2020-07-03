@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import data from '../data/';
 import '../css/modal.css';
-
+import PortfolioCard from './PortfolioCard'
 class Portfolio extends Component {
 
     modal() {
@@ -32,38 +32,37 @@ class Portfolio extends Component {
     }
 
     render() {
-        let {type} = this.props;
+        let { type } = this.props;
+        let count = 0;
         return (
             <section className="portfolio">
                 <div className="container">
-                    <h2>Portfolio</h2>
                     <div className="d-flex">
                         <section className="portfolio-left">
                             <div className="portfolio-pattern">
                                 <div className="portfolio-design">
                                     {
-                                        type==='ui' ? "WEB DESIGN" : "WEB DEVELOPMENT"
+                                        type === 'ui' ? "WEB DESIGN" : "WEB DEVELOPMENT"
                                     }
                                 </div>
                             </div>
 
-                            <div className="seeall"><img src="/icons/arrow.svg" className="arrow" alt="an animating arrow pointing to see all button"/> <a href="/portfolio">see all</a></div>
+                            <div className="seeall"><img src="/icons/arrow.svg" className="arrow" alt="an animating arrow pointing to see all button" /> <a href="/portfolio">see all</a></div>
                         </section>
 
                         <section className="portfolio-cards">
-                        {
-                            // Object.entries(data).map(([key, value]) => (
-                                Object.entries(data[type]).map(([project, data]) => (
+                            {
+                                // Object.entries(data).map(([key, value]) => (
+                                Object.entries(data[type]).map(([project, data]) => {
+                                     count++
+                                     return (
+                                        (count <= 4 ) ?
+                                            <PortfolioCard data={data} project={project} /> : ""
+                                    )
 
-                                    <section className="portfolio-card">
-                                        <img src={data.img} alt={data.name} />
-                                        <h4><a href={'/project/web/' + project}>{data.name}</a></h4>
-                                        <p>{data.description}</p>
-                                        {data.url ? <a href={data.url}> View Project </a> : <a href={data.repo}> View on Github </a>}
-                                    </section>
-                                ))
-                            // ))
-                        }
+                                })
+                                // ))
+                            }
 
                             {/* <!-- The Modal --> */}
                             {/* <div id="myModal" class="modal">

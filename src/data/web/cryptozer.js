@@ -12,7 +12,9 @@
       technology: "PHP (Laravel), HTML, CSS and vue.js",
       problem: `
       <p>A cryptocurrency application that can mine crypto</p>
-            
+      
+      I worked with their back end them helping them with algorithm used in their
+      calculation and database management.
         `,
       helped: [
           'web development'

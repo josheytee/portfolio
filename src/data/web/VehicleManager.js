@@ -7,10 +7,10 @@ export default {
     technology: "PHP (Laravel), HTML, CSS",
     problem: `
     <p>A project to manage vechiles data</p>
-
+    Its was a project used as one of the criteria for awarding Bachelor of Technology for a university graduate.
     `,
     helped:[
-        'web development'
+        'web development','web design'
     ],
     client:{
         name: "Deborah"

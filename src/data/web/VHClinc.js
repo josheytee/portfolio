@@ -3,9 +3,9 @@
       description: " An app that connects doctor to patients",
       img: '/portfolio/vhc.png',
       client: {
-          name: "Koyode Fashanu",
-          title: "Student",
-          comment: "helloe world"
+          name: "Mr Kalil Balogun",
+          title: "CEO, Petabyte Technologies",
+          comment: "Hello Comment"
       },
       // url: "eee",
       repo: 'http://github.com/josheytee/virtualhealth',
@@ -17,7 +17,7 @@
     
         `,
       helped: [
-          'web development'
+          'web development','web design'
       ]
 
   };

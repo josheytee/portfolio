@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import PortfolioCard from '../containers/PortfolioCard';
 import data from '../data/';
 import '../css/App.css';
 import '../css/tabs.css';
@@ -44,7 +45,7 @@ class Portfolio extends Component {
                             <p>Take a look at my works with technologies ranging from front end using react, vue or jquery and Backend using PHP(laravel)</p>
                         </section>
                         <section >
-                            <img src="/illustration.png" alt="An illustration of people trying to build a web page on a browser"/>
+                            <img src="/illustration.png" alt="An illustration of people trying to build a web page on a browser" />
                         </section>
                     </div>
                 </section>
@@ -64,12 +65,8 @@ class Portfolio extends Component {
                                     // console.log(key, value);
                                     // console.log( data);
 
-                                    <section className="portfolio-card">
-                                        <img src={data.img} alt={data.name} />
-                                        <h4><a href={'/project/' + key + '/' + project}>{data.name}</a></h4>
-                                        <p>{data.description}</p>
-                                        {data.url ? <a href={data.url}> View Project </a> : <a href={data.repo}> View on Github </a>}
-                                    </section>
+                                    <PortfolioCard data={data} project={project} />
+
                                 ))
                             ))
                         }
@@ -78,15 +75,11 @@ class Portfolio extends Component {
                     <div id="Paris" className="tabcontent">
                         {
                             // Object.entries(data).map(([key, value]) => (
-                                Object.entries(data['ui']).map(([project, data]) => (
-                                   
-                                    <section className="portfolio-card">
-                                        <img src={data.img} alt={data.name} />
-                                        <h4><a href={'/project/web/' + project}>{data.name}</a></h4>
-                                        <p>{data.description}</p>
-                                        {data.url ? <a href={data.url}> View Project </a> : <a href={data.repo}> View on Github </a>}
-                                    </section>
-                                ))
+                            Object.entries(data['ui']).map(([project, data]) => (
+
+                                <PortfolioCard data={data} project={project} />
+
+                            ))
                             // ))
                         }
                     </div>
@@ -96,13 +89,8 @@ class Portfolio extends Component {
                             Object.entries(data['web']).map(([project, data]) => (
                                 // console.log(key, value);
                                 // console.log( data);
+                                <PortfolioCard data={data} project={project} />
 
-                                <section className="portfolio-card">
-                                    <img src={data.img} alt={data.name} />
-                                    <h4><a href={'/project/web/' + project}>{data.name}</a></h4>
-                                    <p>{data.description}</p>
-                                    {data.url ? <a href={data.url}> View Project </a> : <a href={data.repo}> View on Github </a>}
-                                </section>
                             ))
                         }
                     </div>

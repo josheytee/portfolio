@@ -103,10 +103,10 @@ h1 {
 
 .title::before {
   content: " ";
-  width: 25%;
-  height: 10px;
+  width: 30px;
+  height: 5px;
   top: -15px;
-  background-color: #E4CCFE;
+  background-color: #8E8CD8;
   position: absolute;
 }
 
@@ -187,7 +187,7 @@ header .links-social img {
 .services {
   background-color: #F9EBDC;
   padding-top: 20px;
-  padding: .5rem;
+  padding: 2rem 0;
   position: relative;
   top: -20px;
   z-index: -1;
@@ -246,6 +246,10 @@ header .links-social img {
   background: linear-gradient(45deg, #F6EEFF, #F9EBDC) !important;
 }
 
+.portfolio {
+  margin: 2rem 0;
+}
+
 .portfolio p {
   font-size: .8rem;
 }
@@ -284,8 +288,13 @@ header .links-social img {
   background-size: cover;
 }
 
-.portfolio-card h4 {
+.portfolio-card h3 {
   margin: 0.5rem 0;
+}
+
+.portfolio-card h3 a {
+  font-size: 1rem !important;
+  font-weight: bold;
 }
 
 .portfolio-card p {
@@ -415,7 +424,8 @@ header .links-social img {
   font-weight: bold;
 }
 
-.contact .form-group input, .contact .form-group textarea {
+.contact .form-group input,
+.contact .form-group textarea {
   border-radius: 5px;
   padding: 10px;
   border: none;
