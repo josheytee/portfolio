@@ -39,10 +39,13 @@ class Portfolio extends Component {
                 <section className="benefit gradient">
                     <div className="container d-flex">
                         <section className="portfolio" >
-                            {/* <small>Hi, I am Oluwatobi Agbeja.</small> */}
                             <h1>My PORTFOLIO.</h1>
-                            <p>Freelancing started for me in 2018 till now has got individuals and businesses increase their brand awareness by give them a well designed web interface.</p>
-                            <p>Take a look at my works with technologies ranging from front end using react, vue or jquery and Backend using PHP(laravel)</p>
+                            <p>
+                                Ever since 2018, I started out in the freelancing industry by working with different brands, organizations helping to create Top-Notch Web interfaces purposed for brand awareness and increase in revenue generation.
+                            </p>
+                            <p>
+                                Take a look at my works with technologies ranging from front end using react, vue or jquery and Backend using PHP(laravel)
+                            </p>
                         </section>
                         <section >
                             <img src="/illustration.png" alt="An illustration of people trying to build a web page on a browser" />

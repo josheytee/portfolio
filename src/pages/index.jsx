@@ -77,13 +77,13 @@ function Index() {
             <section>
               <h2 className="title">About Me</h2>
               <p>
-                Oluwatobiloba Agbeja is a software engineer born and raise in Ibadan but stays in Ogun State Nigeria.
+                Oluwatobiloba Agbeja is a passionate, hard working, autodidactic Software Engineer with focus on Web development and flair for creating elegant solutions using beautiful software architecture and design patterns.
               </p>
               <p>
-                he is a hard working software developer focused on web development with a flair for creating elegant solutions. Passionate about software architecture and design patterns.
+                Also, a Computer Science and Engineering graduate of Ladoke Akintola University of Technology, Ogbomoso. Nigeria.
               </p>
               <p>
-                He is also a computer science and engineering graduate of Ladoke Akintola University of Technology.
+                I enjoy guiding, supporting, and learning from other great minds. 
               </p>
             </section>
           </div>
